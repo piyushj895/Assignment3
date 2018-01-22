@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <link rel="stylesheet" href="./assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.transitions.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.css">
+  </head>
+  <body style="background-color:#E0F7FA">
+
+    <div class="container">
+<div class="row">
+      <div class="col-md-10 center">
+        <div   class="owl-carousel owl-theme" id="owl-demo">
+          <div class="owl-item active"><img src="./assets/images/1.jpeg" style="height:100px;width:400px" ></div>
+          <div class="owl-item"><img src="./assets/images/2.jpeg" style="height:100px;width:400px"></div>
+          <div class="owl-item"><img src="./assets/images/3.jpg" style="height:100px;width:400px"></div>
+          <div class="owl-item"><img src="./assets/images/4.jpg" style="height:100px;width:400px;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./assets/js/owl.carousel.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#owl-demo").owlCarousel({
+        autoPlay:3000,
+        items:4,
+        loop:true,
+        navigation : true,
+        itemsDesktop:[1199,3],
+        itemsDesktopSmall:[979,3],
+        responsiveClass:true,
+       responsive:{
+           0:{
+               items:1,
+               nav:true
+           },
+           600:{
+               items:3,
+               nav:false
+           }
+         }
+      });
+    });
+    </script>
+
+  </body>
+</html>
